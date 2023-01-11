@@ -19,6 +19,9 @@ use Inertia\Inertia;
 Route::get('/', function () {
     return Inertia::render('Welcome');
 });
+Route::get('/cal', function () {
+    return Inertia::render('Calendar');
+});
 
 Route::get('/dashboard', function () {
     return Inertia::render('Dashboard');

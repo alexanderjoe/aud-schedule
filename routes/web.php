@@ -22,6 +22,7 @@ Route::get('/', function () {
 });
 
 Route::get('/data', [CalendarEventController::class, 'index']);
+Route::post('/cal', [CalendarEventController::class, 'store'])->name('cal.store');
 
 Route::get('/cal', function () {
     return Inertia::render('Calendar');
